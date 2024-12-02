@@ -293,8 +293,6 @@ a:focus {
 .grid figure img {
   position: relative;
   display: block;
-  min-height: 100%;
-  max-width: 100%;
   opacity: 0.8;
 }
 
@@ -356,19 +354,26 @@ a:focus {
 
 figure.effect-honey {
   background: #4a3753;
-  max-width: 220px;
+  width: 210px; /* عرض الحاوية */
+  height: 210px; /* ارتفاع الحاوية */
+  margin: 0 auto; /* لمحاذاة الحاويات في المنتصف إذا لزم الأمر */
+  overflow: hidden; /* لقص أي جزء زائد من الصورة */
 }
 
+/* الصورة داخل الحاوية */
 figure.effect-honey img {
-  opacity: 0.9;
+  width: 100%; /* ملء عرض الحاوية */
+  height: 100%; /* ملء ارتفاع الحاوية */
+  object-fit: cover; /* لجعل الصورة تملأ الحاوية بشكل متناسق */
+  opacity: 0.9; /* الشفافية الافتراضية */
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
+/* التأثير عند التمرير فوق الحاوية */
 figure.effect-honey:hover img {
-  opacity: 0.5;
+  opacity: 0.5; /* تقليل الشفافية عند التمرير */
 }
-
 figure.effect-honey figcaption::before {
   position: absolute;
   bottom: 0;
