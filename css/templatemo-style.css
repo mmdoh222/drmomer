@@ -424,7 +424,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/the-town-bg-01.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/the-town-bg-02.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
