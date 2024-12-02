@@ -133,7 +133,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./img/the-town-bg-01.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/the-town-bg-01.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
