@@ -133,7 +133,6 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/the-town-bg-01.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
@@ -354,26 +353,34 @@ a:focus {
 
 figure.effect-honey {
   background: #284e73;
-  width: 210px; /* عرض الحاوية */
-  height: 210px; /* ارتفاع الحاوية */
-  margin: 0 auto; /* لمحاذاة الحاويات في المنتصف إذا لزم الأمر */
-  overflow: hidden; /* لقص أي جزء زائد من الصورة */
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  /* لمحاذاة الحاويات في المنتصف إذا لزم الأمر */
+  overflow: hidden;
+  /* لقص أي جزء زائد من الصورة */
 }
 
 /* الصورة داخل الحاوية */
 figure.effect-honey img {
-  width: 100%; /* ملء عرض الحاوية */
-  height: 100%; /* ملء ارتفاع الحاوية */
-  object-fit: cover; /* لجعل الصورة تملأ الحاوية بشكل متناسق */
-  opacity: 0.9; /* الشفافية الافتراضية */
+  width: 100%;
+  /* ملء عرض الحاوية */
+  height: 100%;
+  /* ملء ارتفاع الحاوية */
+  object-fit: cover;
+  /* لجعل الصورة تملأ الحاوية بشكل متناسق */
+  opacity: 0.9;
+  /* الشفافية الافتراضية */
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
 /* التأثير عند التمرير فوق الحاوية */
 figure.effect-honey:hover img {
-  opacity: 0.5; /* تقليل الشفافية عند التمرير */
+  opacity: 0.5;
+  /* تقليل الشفافية عند التمرير */
 }
+
 figure.effect-honey figcaption::before {
   position: absolute;
   bottom: 0;
@@ -424,10 +431,9 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/the-town-bg-02.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   min-height: 850px;
   position: relative;
   padding-bottom: 50px;
@@ -516,7 +522,19 @@ figure.effect-honey:hover h2 i {
 p {
   line-height: 1.9;
 }
+.bg-1 {
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(../img/bg-web.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+#contact{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-web2.webp);
+}
+.bg2{
+  background-color: #14354d;
+}
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
@@ -526,6 +544,8 @@ p {
     padding-right: 30px;
     padding-left: 30px;
   }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -540,6 +560,7 @@ p {
   .tm-container-contact {
     max-width: 1063px;
   }
+
 }
 
 @media (max-width: 991px) {
@@ -570,7 +591,7 @@ p {
   }
 
   .navbar-nav {
-    max-width: 200px;
+    width: 100%;
     text-align: right;
   }
 
@@ -578,10 +599,26 @@ p {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 3px;
+    display: flex;
+    justify-content: center;
   }
 
   .navbar-collapse .nav-link {
+    width: 100%;
     color: #8f8f8f;
+    text-align: center;
+  }
+
+  .bg-1 {
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(../img/bg-mobile.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+  #contact{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-mobile2.webp);
+
   }
 }
 
@@ -601,10 +638,11 @@ p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .tm-btn-submit {
     display: block;
     margin-left: 0;
     margin-top: 20px;
   }
+
 }
