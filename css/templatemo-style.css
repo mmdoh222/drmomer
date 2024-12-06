@@ -535,6 +535,9 @@ p {
 .bg2{
   background-color: #14354d;
 }
+.slick-initialized .slick-slide{
+   display: flex !important;
+}
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
@@ -624,7 +627,7 @@ p {
 
 @media (max-width: 480px) {
   .tm-gallery-container {
-    max-width: 220px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
