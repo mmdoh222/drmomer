@@ -523,14 +523,14 @@ p {
   line-height: 1.9;
 }
 .bg-1 {
-  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(../img/bg-web.webp);
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(https://drmomar.com/img/bg-web.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #contact{
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-web2.webp);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://drmomar.com/img/bg-web2.webp);
 }
 .bg2{
   background-color: #14354d;
@@ -613,14 +613,14 @@ p {
   }
 
   .bg-1 {
-    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(../img/bg-mobile.webp);
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(https://drmomar.com/img/bg-mobile.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
   }
   #contact{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-mobile2.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://drmomar.com/img/bg-mobile2.webp);
 
   }
 }
